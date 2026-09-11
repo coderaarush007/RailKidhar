@@ -1,0 +1,61 @@
+.rk-alert-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  padding: 10px 0;
+  border-bottom: 1px solid var(--rk-border-soft);
+}
+
+.rk-alert-row:last-child {
+  border-bottom: none;
+}
+
+.rk-alert-icon {
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.rk-alert-critical .rk-alert-icon {
+  background: var(--rk-danger-bg);
+  color: var(--rk-danger);
+}
+
+.rk-alert-warning .rk-alert-icon {
+  background: var(--rk-warning-bg);
+  color: var(--rk-warning);
+}
+
+.rk-alert-info .rk-alert-icon {
+  background: var(--rk-info-bg);
+  color: var(--rk-info);
+}
+
+.rk-alert-body {
+  flex: 1;
+  min-width: 0;
+}
+
+.rk-alert-title {
+  margin: 0;
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--rk-text);
+}
+
+.rk-alert-detail {
+  margin: 1px 0 0;
+  font-size: 12px;
+  color: var(--rk-text-muted);
+}
+
+.rk-alert-time {
+  font-size: 11px;
+  color: var(--rk-text-faint);
+  white-space: nowrap;
+  flex-shrink: 0;
+}

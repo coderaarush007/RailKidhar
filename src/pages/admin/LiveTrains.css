@@ -1,0 +1,37 @@
+.rk-live-trains-page {
+  padding: 18px;
+}
+
+.rk-live-trains-head {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 14px;
+}
+
+.rk-live-trains-filters {
+  display: flex;
+  gap: 6px;
+  background: var(--rk-surface-soft);
+  border-radius: var(--rk-radius-sm);
+  padding: 3px;
+}
+
+.rk-filter-btn {
+  border: none;
+  background: transparent;
+  padding: 6px 12px;
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--rk-text-muted);
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.rk-filter-active {
+  background: var(--rk-surface);
+  color: var(--rk-blue);
+  box-shadow: var(--rk-shadow-sm);
+}

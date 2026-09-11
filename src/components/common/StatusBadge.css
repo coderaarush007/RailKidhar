@@ -1,0 +1,30 @@
+.rk-status-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 12px;
+  font-weight: 700;
+  padding: 3px 9px;
+  border-radius: 999px;
+  line-height: 1.5;
+}
+
+.rk-status-success {
+  color: var(--rk-success);
+  background: var(--rk-success-bg);
+}
+
+.rk-status-warning {
+  color: var(--rk-warning);
+  background: var(--rk-warning-bg);
+}
+
+.rk-status-danger {
+  color: var(--rk-danger);
+  background: var(--rk-danger-bg);
+}
+
+.rk-status-info {
+  color: var(--rk-info);
+  background: var(--rk-info-bg);
+}

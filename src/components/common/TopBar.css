@@ -1,0 +1,52 @@
+.rk-topbar {
+  height: var(--rk-header-h);
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 0 20px;
+  background: var(--rk-surface);
+  border-bottom: 1px solid var(--rk-border);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.rk-topbar-search {
+  flex: 1;
+  max-width: 520px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: var(--rk-surface-soft);
+  border: 1px solid var(--rk-border);
+  border-radius: 999px;
+  padding: 8px 14px;
+  color: var(--rk-text-faint);
+}
+
+.rk-topbar-search input {
+  border: none;
+  outline: none;
+  background: transparent;
+  flex: 1;
+  font-size: 13.5px;
+  color: var(--rk-text);
+}
+
+.rk-topbar-right {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+@media (max-width: 640px) {
+  .rk-topbar {
+    padding: 0 12px;
+    gap: 10px;
+  }
+  .rk-topbar-search {
+    padding: 7px 10px;
+  }
+}

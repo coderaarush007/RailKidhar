@@ -1,0 +1,39 @@
+.rk-live-indicator {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 12.5px;
+  font-weight: 700;
+  color: var(--rk-success);
+}
+
+.rk-live-dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--rk-success);
+}
+
+.rk-live-on {
+  animation: rk-pulse 1.6s ease-in-out infinite;
+}
+
+.rk-live-paused {
+  background: var(--rk-text-faint);
+}
+
+.rk-live-updated {
+  color: var(--rk-text-muted);
+  font-weight: 500;
+}
+
+@keyframes rk-pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.35; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .rk-live-on {
+    animation: none;
+  }
+}

@@ -1,0 +1,18 @@
+/* Shared breakpoints. Mobile-first overrides live per-component CSS file;
+   this file only holds cross-cutting layout collapses. */
+:root {
+  --bp-mobile: 480px;
+  --bp-tablet: 860px;
+}
+
+@media (max-width: 860px) {
+  .rk-hide-tablet {
+    display: none !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .rk-hide-mobile {
+    display: none !important;
+  }
+}

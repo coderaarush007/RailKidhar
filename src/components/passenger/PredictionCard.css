@@ -1,0 +1,39 @@
+.rk-prediction-card {
+  padding: 16px;
+}
+
+.rk-prediction-sub {
+  margin: 2px 0 12px;
+  font-size: 12px;
+  color: var(--rk-text-muted);
+}
+
+.rk-prediction-eta-row {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+  margin-bottom: 14px;
+}
+
+.rk-prediction-eta {
+  font-size: 26px;
+  font-weight: 800;
+  color: var(--rk-text);
+}
+
+.rk-prediction-delay {
+  font-size: 13px;
+  font-weight: 700;
+  padding: 2px 9px;
+  border-radius: 999px;
+}
+
+.rk-prediction-delay.late {
+  color: var(--rk-danger);
+  background: var(--rk-danger-bg);
+}
+
+.rk-prediction-delay.ontime {
+  color: var(--rk-success);
+  background: var(--rk-success-bg);
+}

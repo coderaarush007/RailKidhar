@@ -1,0 +1,49 @@
+.rk-train-intel {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.rk-intel-note {
+  margin: 0;
+  font-size: 12.5px;
+  color: var(--rk-text-muted);
+  background: var(--rk-surface-soft);
+  border: 1px solid var(--rk-border-soft);
+  border-radius: var(--rk-radius-sm);
+  padding: 10px 14px;
+}
+
+.rk-intel-grid {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  gap: 16px;
+  align-items: start;
+}
+
+.rk-intel-map,
+.rk-intel-summary,
+.rk-intel-reason,
+.rk-intel-risk {
+  padding: 16px;
+}
+
+.rk-intel-eta {
+  margin: 6px 0 2px;
+  font-size: 26px;
+  font-weight: 800;
+  color: var(--rk-text);
+}
+
+.rk-intel-eta-sub {
+  margin: 0 0 14px;
+  font-size: 12.5px;
+  color: var(--rk-danger);
+  font-weight: 700;
+}
+
+@media (max-width: 960px) {
+  .rk-intel-grid {
+    grid-template-columns: 1fr;
+  }
+}

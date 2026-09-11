@@ -1,0 +1,65 @@
+.rk-propagation {
+  padding: 16px;
+}
+
+.rk-propagation-flow {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+  margin-top: 12px;
+  color: var(--rk-text-faint);
+}
+
+.rk-propagation-chain {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.rk-propagation-node {
+  border: 1px solid var(--rk-border);
+  border-radius: var(--rk-radius-sm);
+  padding: 8px 12px;
+  font-size: 11.5px;
+  font-weight: 700;
+  color: var(--rk-text-muted);
+  background: var(--rk-surface-soft);
+  text-align: center;
+}
+
+.rk-propagation-node span {
+  display: block;
+  font-size: 13px;
+  color: var(--rk-text);
+}
+
+.rk-propagation-node p {
+  margin: 2px 0 0;
+  font-size: 10.5px;
+  color: var(--rk-text-muted);
+}
+
+.rk-propagation-focus {
+  background: var(--rk-blue-light);
+  border-color: var(--rk-blue);
+}
+
+.rk-propagation-focus span {
+  color: var(--rk-blue);
+}
+
+.rk-propagation-warn {
+  background: var(--rk-warning-bg);
+  border-color: var(--rk-warning);
+}
+
+.rk-propagation-warn span {
+  color: var(--rk-warning);
+}
+
+.rk-propagation-danger {
+  background: var(--rk-danger-bg);
+  border-color: var(--rk-danger);
+  color: var(--rk-danger);
+}

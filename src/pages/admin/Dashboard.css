@@ -1,0 +1,127 @@
+.rk-dashboard {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.rk-dashboard-heading {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 10px;
+}
+
+.rk-dashboard-heading h1 {
+  margin: 0;
+  font-size: 22px;
+  font-weight: 800;
+  color: var(--rk-navy);
+}
+
+.rk-dashboard-heading p {
+  margin: 4px 0 0;
+  font-size: 13px;
+  color: var(--rk-text-muted);
+}
+
+.rk-dashboard-updated {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 12px;
+  color: var(--rk-text-muted);
+  font-weight: 600;
+}
+
+.rk-dashboard-kpis {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 14px;
+}
+
+.rk-dashboard-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 16px;
+  align-items: start;
+}
+
+.rk-dashboard-grid-secondary {
+  grid-template-columns: 1.4fr 1fr;
+}
+
+.rk-dashboard-map,
+.rk-dashboard-insights {
+  padding: 16px;
+}
+
+.rk-dashboard-map-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.rk-dashboard-view-all {
+  display: inline-block;
+  margin-top: 10px;
+}
+
+.rk-dashboard-side {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.rk-dashboard-side .rk-card {
+  padding: 16px;
+}
+
+.rk-zone-list {
+  margin-top: 10px;
+}
+
+.rk-zone-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 0;
+  border-bottom: 1px solid var(--rk-border-soft);
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--rk-text);
+}
+
+.rk-zone-row:last-child {
+  border-bottom: none;
+}
+
+.rk-zone-right {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.rk-zone-count {
+  font-size: 11px;
+  color: var(--rk-text-muted);
+  font-weight: 500;
+}
+
+@media (max-width: 1080px) {
+  .rk-dashboard-kpis {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .rk-dashboard-grid,
+  .rk-dashboard-grid-secondary {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .rk-dashboard-kpis {
+    grid-template-columns: 1fr;
+  }
+}

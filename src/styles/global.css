@@ -1,0 +1,126 @@
+@import "./variables.css";
+@import "./responsive.css";
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: var(--rk-bg);
+  color: var(--rk-text);
+  font-family: var(--rk-font);
+  -webkit-font-smoothing: antialiased;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  font-family: inherit;
+}
+
+button,
+input,
+select {
+  color: inherit;
+}
+
+input,
+select {
+  font-family: inherit;
+  font-size: inherit;
+}
+
+::placeholder {
+  color: var(--rk-text-faint);
+}
+
+.rk-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  border: 1px solid var(--rk-border);
+  background: var(--rk-surface);
+  color: var(--rk-text);
+  border-radius: var(--rk-radius-sm);
+  padding: 8px 14px;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.15s ease, border-color 0.15s ease;
+}
+
+.rk-btn:hover {
+  background: var(--rk-surface-soft);
+}
+
+.rk-btn:focus-visible,
+a:focus-visible,
+button:focus-visible,
+input:focus-visible {
+  outline: 2px solid var(--rk-blue);
+  outline-offset: 2px;
+}
+
+.rk-btn-primary {
+  background: var(--rk-blue);
+  border-color: var(--rk-blue);
+  color: #fff;
+}
+
+.rk-btn-primary:hover {
+  background: var(--rk-blue-dark);
+}
+
+.rk-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.rk-card {
+  background: var(--rk-surface);
+  border: 1px solid var(--rk-border);
+  border-radius: var(--rk-radius-lg);
+  box-shadow: var(--rk-shadow-sm);
+}
+
+.rk-section-title {
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--rk-text);
+  margin: 0;
+}
+
+.rk-section-subtitle {
+  font-size: 12.5px;
+  color: var(--rk-text-muted);
+  margin: 2px 0 0;
+}
+
+.rk-link {
+  color: var(--rk-blue);
+  font-weight: 600;
+  font-size: 13px;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+}

@@ -1,0 +1,62 @@
+.rk-train-table-wrap {
+  overflow-x: auto;
+}
+
+.rk-train-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 12.5px;
+}
+
+.rk-train-table th {
+  text-align: left;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  color: var(--rk-text-muted);
+  font-weight: 700;
+  padding: 8px 12px;
+  border-bottom: 1px solid var(--rk-border);
+  white-space: nowrap;
+}
+
+.rk-train-table td {
+  padding: 11px 12px;
+  border-bottom: 1px solid var(--rk-border-soft);
+  vertical-align: middle;
+  color: var(--rk-text);
+  white-space: nowrap;
+}
+
+.rk-train-table tbody tr {
+  cursor: pointer;
+}
+
+.rk-train-table tbody tr:hover {
+  background: var(--rk-surface-soft);
+}
+
+.rk-train-cell {
+  display: flex;
+  flex-direction: column;
+}
+
+.rk-train-cell strong {
+  font-size: 13px;
+}
+
+.rk-train-cell span {
+  font-size: 11px;
+  color: var(--rk-text-muted);
+  font-weight: 500;
+}
+
+.rk-delay-late {
+  color: var(--rk-danger);
+  font-weight: 700;
+}
+
+.rk-delay-ontime {
+  color: var(--rk-success);
+  font-weight: 700;
+}

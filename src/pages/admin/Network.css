@@ -1,0 +1,39 @@
+.rk-network-page {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.rk-network-map-card {
+  padding: 16px;
+}
+
+.rk-network-grid {
+  display: grid;
+  grid-template-columns: 1.4fr 1fr;
+  gap: 16px;
+}
+
+.rk-network-grid .rk-card {
+  padding: 16px;
+}
+
+.rk-network-zone-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 9px 0;
+  border-bottom: 1px solid var(--rk-border-soft);
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.rk-network-zone-row:last-child {
+  border-bottom: none;
+}
+
+@media (max-width: 900px) {
+  .rk-network-grid {
+    grid-template-columns: 1fr;
+  }
+}

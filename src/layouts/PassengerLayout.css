@@ -1,0 +1,57 @@
+.rk-app-shell {
+  display: flex;
+  min-height: 100vh;
+  background: var(--rk-bg);
+}
+
+.rk-app-main {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.rk-app-content {
+  flex: 1;
+  padding: 20px 24px 48px;
+  max-width: 1440px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.rk-icon-btn {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  border: 1px solid var(--rk-border);
+  background: var(--rk-surface);
+  color: var(--rk-text-muted);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.rk-icon-btn:hover {
+  background: var(--rk-surface-soft);
+  color: var(--rk-text);
+}
+
+.rk-profile-chip {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  background: var(--rk-blue-light);
+  color: var(--rk-blue);
+  font-size: 12.5px;
+  font-weight: 800;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (max-width: 860px) {
+  .rk-app-content {
+    padding: 16px 14px 84px;
+  }
+}

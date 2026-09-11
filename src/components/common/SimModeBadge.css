@@ -1,0 +1,13 @@
+.rk-sim-badge {
+  display: inline-flex;
+  align-items: center;
+  font-size: 10.5px;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  color: var(--rk-warning);
+  background: var(--rk-warning-bg);
+  border: 1px solid var(--rk-warning);
+  border-radius: 999px;
+  padding: 3px 9px;
+  white-space: nowrap;
+}

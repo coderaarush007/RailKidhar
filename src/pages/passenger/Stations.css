@@ -1,0 +1,73 @@
+.rk-stations-page {
+  padding: 18px;
+  max-width: 640px;
+}
+
+.rk-stations-search {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: var(--rk-surface-soft);
+  border: 1px solid var(--rk-border);
+  border-radius: var(--rk-radius-sm);
+  padding: 8px 12px;
+  margin: 12px 0;
+  color: var(--rk-text-faint);
+}
+
+.rk-stations-search input {
+  border: none;
+  outline: none;
+  background: transparent;
+  flex: 1;
+  font-size: 13px;
+  color: var(--rk-text);
+}
+
+.rk-station-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 0;
+  border-bottom: 1px solid var(--rk-border-soft);
+}
+
+.rk-station-row:last-child {
+  border-bottom: none;
+}
+
+.rk-station-icon {
+  width: 30px;
+  height: 30px;
+  border-radius: 8px;
+  background: var(--rk-blue-light);
+  color: var(--rk-blue);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.rk-station-name {
+  margin: 0;
+  font-size: 13.5px;
+  font-weight: 700;
+  color: var(--rk-text);
+}
+
+.rk-station-zone {
+  margin: 1px 0 0;
+  font-size: 11.5px;
+  color: var(--rk-text-muted);
+}
+
+.rk-station-code {
+  margin-left: auto;
+  font-size: 11px;
+  font-weight: 700;
+  color: var(--rk-text-muted);
+  background: var(--rk-surface-soft);
+  border: 1px solid var(--rk-border-soft);
+  padding: 2px 8px;
+  border-radius: 999px;
+}

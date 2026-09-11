@@ -1,0 +1,75 @@
+.rk-train-header {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 18px;
+}
+
+.rk-train-header-left {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  min-width: 0;
+}
+
+.rk-train-number {
+  background: var(--rk-blue);
+  color: #fff;
+  font-weight: 800;
+  font-size: 13px;
+  padding: 5px 10px;
+  border-radius: var(--rk-radius-sm);
+  flex-shrink: 0;
+}
+
+.rk-train-name {
+  margin: 0;
+  font-size: 17px;
+  font-weight: 800;
+  color: var(--rk-navy);
+}
+
+.rk-train-route {
+  margin: 2px 0 0;
+  font-size: 12.5px;
+  color: var(--rk-text-muted);
+  font-weight: 600;
+}
+
+.rk-train-header-right {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.rk-train-delay-chip {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  font-size: 11px;
+  color: var(--rk-text-muted);
+}
+
+.rk-train-delay-chip strong {
+  font-size: 15px;
+}
+
+.rk-train-delay-chip strong.late {
+  color: var(--rk-danger);
+}
+
+.rk-train-delay-chip strong.ontime {
+  color: var(--rk-success);
+}
+
+@media (max-width: 480px) {
+  .rk-train-header {
+    padding: 14px;
+  }
+  .rk-train-header-right {
+    width: 100%;
+    justify-content: space-between;
+  }
+}

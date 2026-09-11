@@ -1,0 +1,41 @@
+.rk-reason-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.rk-reason-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 7px 0;
+  font-size: 13px;
+  border-bottom: 1px dashed var(--rk-border-soft);
+}
+
+.rk-reason-row:last-child {
+  border-bottom: none;
+}
+
+.rk-reason-current {
+  color: var(--rk-text-muted);
+  font-weight: 600;
+}
+
+.rk-reason-bad {
+  color: var(--rk-danger);
+  font-weight: 700;
+}
+
+.rk-reason-good {
+  color: var(--rk-success);
+  font-weight: 700;
+}
+
+.rk-reason-total {
+  margin-top: 4px;
+  padding-top: 10px;
+  border-top: 1px solid var(--rk-border);
+  border-bottom: none;
+  font-weight: 800;
+  font-size: 14px;
+  color: var(--rk-text);
+}

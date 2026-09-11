@@ -1,0 +1,50 @@
+.rk-coach-card {
+  padding: 16px;
+}
+
+.rk-coach-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  margin: 12px 0 6px;
+}
+
+.rk-coach {
+  width: 26px;
+  height: 26px;
+  border-radius: 6px;
+  border: 1px solid var(--rk-border);
+  background: var(--rk-surface-soft);
+  color: var(--rk-text-muted);
+  font-size: 10.5px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.rk-coach-active {
+  background: var(--rk-success);
+  border-color: var(--rk-success);
+  color: #fff;
+}
+
+.rk-coach-note {
+  margin: 0 0 10px;
+  font-size: 11px;
+  color: var(--rk-success);
+  font-weight: 700;
+}
+
+.rk-coach-footer {
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+  color: var(--rk-text-muted);
+  padding-top: 10px;
+  border-top: 1px solid var(--rk-border-soft);
+}
+
+.rk-coach-footer strong {
+  color: var(--rk-text);
+}

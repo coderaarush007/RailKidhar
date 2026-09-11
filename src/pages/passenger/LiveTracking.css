@@ -1,0 +1,144 @@
+.rk-live-tracking {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.rk-lt-strip {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+  background: var(--rk-surface);
+  border: 1px solid var(--rk-border);
+  border-radius: var(--rk-radius-lg);
+  padding: 14px 18px;
+}
+
+.rk-lt-strip p {
+  margin: 0 0 3px;
+  font-size: 11px;
+  color: var(--rk-text-muted);
+  font-weight: 600;
+}
+
+.rk-lt-strip strong {
+  font-size: 14px;
+  color: var(--rk-text);
+}
+
+.rk-lt-strip-updated {
+  display: block;
+  font-size: 10.5px;
+  color: var(--rk-text-faint);
+  margin-top: 2px;
+  font-weight: 500;
+}
+
+.rk-lt-grid {
+  display: grid;
+  grid-template-columns: 1.6fr 1fr;
+  gap: 16px;
+  align-items: start;
+}
+
+.rk-lt-main {
+  padding: 14px;
+}
+
+.rk-tabs {
+  display: flex;
+  gap: 4px;
+  margin-bottom: 12px;
+  border-bottom: 1px solid var(--rk-border-soft);
+  overflow-x: auto;
+}
+
+.rk-tab {
+  padding: 8px 12px;
+  font-size: 12.5px;
+  font-weight: 700;
+  color: var(--rk-text-muted);
+  border-bottom: 2px solid transparent;
+  white-space: nowrap;
+  cursor: pointer;
+  background: none;
+  border-left: none;
+  border-right: none;
+  border-top: none;
+}
+
+.rk-tab-active {
+  color: var(--rk-blue);
+  border-bottom-color: var(--rk-blue);
+}
+
+.rk-lt-timeline-panel {
+  padding: 16px;
+  max-height: 560px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.rk-lt-timeline-scroll {
+  overflow-y: auto;
+  margin-top: 10px;
+}
+
+.rk-train-info-grid {
+  margin: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px 20px;
+}
+
+.rk-train-info-grid dt {
+  font-size: 11px;
+  color: var(--rk-text-muted);
+  font-weight: 600;
+  margin-bottom: 3px;
+}
+
+.rk-train-info-grid dd {
+  margin: 0;
+  font-size: 13.5px;
+  font-weight: 700;
+  color: var(--rk-text);
+}
+
+.rk-lt-bottom-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+
+.rk-lt-reason-card,
+.rk-alerts-card {
+  padding: 16px;
+}
+
+.rk-alerts-card .rk-btn {
+  display: block;
+  width: 100%;
+  margin-top: 8px;
+  text-align: left;
+}
+
+@media (max-width: 1080px) {
+  .rk-lt-grid,
+  .rk-lt-bottom-grid {
+    grid-template-columns: 1fr;
+  }
+  .rk-lt-timeline-panel {
+    max-height: none;
+  }
+}
+
+@media (max-width: 640px) {
+  .rk-lt-strip {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .rk-train-info-grid {
+    grid-template-columns: 1fr;
+  }
+}

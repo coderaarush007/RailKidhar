@@ -1,0 +1,102 @@
+.rk-sidebar {
+  width: var(--rk-sidebar-w);
+  flex-shrink: 0;
+  background: var(--rk-surface);
+  border-right: 1px solid var(--rk-border);
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  position: sticky;
+  top: 0;
+}
+
+.rk-sidebar-brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 18px 18px 14px;
+}
+
+.rk-logo-mark {
+  width: 34px;
+  height: 34px;
+  border-radius: 9px;
+  background: var(--rk-blue);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.rk-logo-name {
+  margin: 0;
+  font-weight: 800;
+  font-size: 16px;
+  color: var(--rk-navy);
+  line-height: 1.2;
+}
+
+.rk-logo-subtitle {
+  margin: 0;
+  font-size: 11px;
+  color: var(--rk-text-muted);
+  font-weight: 600;
+}
+
+.rk-sidebar-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  padding: 6px 12px;
+  overflow-y: auto;
+}
+
+.rk-sidebar-link {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 9px 10px;
+  border-radius: var(--rk-radius-sm);
+  color: var(--rk-text-muted);
+  font-size: 13.5px;
+  font-weight: 600;
+}
+
+.rk-sidebar-link:hover {
+  background: var(--rk-surface-soft);
+  color: var(--rk-text);
+}
+
+.rk-sidebar-link-active {
+  background: var(--rk-blue-light);
+  color: var(--rk-blue);
+}
+
+.rk-sidebar-badge {
+  margin-left: auto;
+  background: var(--rk-danger);
+  color: #fff;
+  font-size: 10.5px;
+  font-weight: 700;
+  border-radius: 999px;
+  padding: 1px 6px;
+}
+
+.rk-sidebar-footer {
+  margin-top: auto;
+  padding: 14px 16px 18px;
+  border-top: 1px solid var(--rk-border-soft);
+}
+
+.rk-sidebar-footer-stack {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+@media (max-width: 860px) {
+  .rk-sidebar {
+    display: none;
+  }
+}

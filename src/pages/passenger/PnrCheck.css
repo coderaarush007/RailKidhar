@@ -1,0 +1,87 @@
+.rk-pnr-page {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  max-width: 640px;
+}
+
+.rk-pnr-card,
+.rk-pnr-result {
+  padding: 18px;
+}
+
+.rk-pnr-form {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 12px;
+  background: var(--rk-surface-soft);
+  border: 1px solid var(--rk-border);
+  border-radius: var(--rk-radius-sm);
+  padding: 8px 12px;
+  color: var(--rk-text-faint);
+}
+
+.rk-pnr-form input {
+  flex: 1;
+  border: none;
+  outline: none;
+  background: transparent;
+  font-size: 14px;
+  letter-spacing: 0.04em;
+  color: var(--rk-text);
+}
+
+.rk-pnr-error {
+  margin: 8px 0 0;
+  font-size: 12.5px;
+  color: var(--rk-danger);
+}
+
+.rk-pnr-result-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 10px;
+  margin: 12px 0 14px;
+}
+
+.rk-pnr-train {
+  margin: 0;
+  font-size: 15px;
+  font-weight: 800;
+  color: var(--rk-text);
+}
+
+.rk-pnr-route {
+  margin: 2px 0 0;
+  font-size: 12px;
+  color: var(--rk-text-muted);
+}
+
+.rk-pnr-grid {
+  margin: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px 20px;
+}
+
+.rk-pnr-grid dt {
+  font-size: 11px;
+  color: var(--rk-text-muted);
+  font-weight: 600;
+  margin-bottom: 3px;
+}
+
+.rk-pnr-grid dd {
+  margin: 0;
+  font-size: 13.5px;
+  font-weight: 700;
+  color: var(--rk-text);
+}
+
+@media (max-width: 480px) {
+  .rk-pnr-grid {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,58 @@
+.rk-brand-promo {
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  background: var(--rk-surface-soft);
+  border: 1px solid var(--rk-border-soft);
+  border-radius: var(--rk-radius);
+  padding: 12px 14px 14px;
+  overflow: hidden;
+}
+
+.rk-brand-promo-icon {
+  width: 30px;
+  height: 30px;
+  border-radius: 8px;
+  background: var(--rk-blue-light);
+  color: var(--rk-blue);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.rk-brand-promo-title {
+  margin: 0;
+  font-size: 12.5px;
+  font-weight: 700;
+  color: var(--rk-text);
+  line-height: 1.3;
+}
+
+.rk-brand-promo-subtitle {
+  margin: 2px 0 0;
+  font-size: 11px;
+  color: var(--rk-text-muted);
+}
+
+.rk-brand-promo-accent {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 3px;
+  background: linear-gradient(90deg, #ff9933 0 33%, var(--rk-surface) 33% 66%, #138808 66% 100%);
+  opacity: 0.85;
+}
+
+.rk-brand-promo-body {
+  flex: 1;
+  min-width: 0;
+}
+
+.rk-brand-promo-arrow {
+  color: var(--rk-text-faint);
+  flex-shrink: 0;
+  align-self: center;
+}
